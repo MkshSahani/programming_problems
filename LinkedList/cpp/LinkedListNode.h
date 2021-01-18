@@ -1,5 +1,10 @@
 #ifndef LINKEDLISTNODE_H 
 #define LINKEDLISTNODE_H 
+#include <iostream> 
+#include <cstdlib> 
+
+using namespace std; 
+
 
 /**
  * @class : SinlyLinkedListNode 

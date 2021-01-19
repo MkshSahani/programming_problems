@@ -63,20 +63,4 @@ SinglyLinkedListNode<T>* SinglyLinkedListNode<T>::getNext() const {
 
 
 
-/**
- * @class : DoublyLinkedListNode. 
-*/
-
-// template <typename T> 
-// class DoublyLinkedListNode : public SinlgyLinkedListNode<T> {
-//     public: 
-//         DoublyLinkedListNode(); 
-//         DoublyLinkedListNode(T data); 
-
-//     private: 
-//         DoublyLinkedListNode* previous; 
-
-// }; 
-
-
 #endif 

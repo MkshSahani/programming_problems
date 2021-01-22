@@ -1,3 +1,6 @@
+package java_linked_list.LinkedList; 
+
+
 public class LinkedListNode {
     private int data; 
     private LinkedListNode next; 

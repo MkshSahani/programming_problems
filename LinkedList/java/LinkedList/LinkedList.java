@@ -1,4 +1,4 @@
-package java.LinkedList;
+
 
 public class LinkedList {
     
@@ -27,6 +27,7 @@ public class LinkedList {
                 System.out.print(current.getData() + " "); 
                 current = current.getNext(); // iterate over next node. 
             }
+            System.out.println(); 
         }       
     }
 }

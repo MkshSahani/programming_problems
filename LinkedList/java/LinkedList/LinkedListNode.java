@@ -1,5 +1,3 @@
-package java.LinkedList;
-
 public class LinkedListNode {
     private int data; 
     private LinkedListNode next; 

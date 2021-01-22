@@ -36,3 +36,4 @@ public class LinkedListNode {
         " Next node addresss : " + this.next); // print details of LinkedListNode 
     }
 }
+

@@ -21,7 +21,13 @@ public class LinkedList {
     }
 
     public void printList() {
-        
+        if(this.head != null) {
+            LinkedListNode current = this.head; 
+            while(current != null) {
+                System.out.print(current.getData() + " "); 
+                current = current.getNext(); // iterate over next node. 
+            }
+        }       
     }
 }
 

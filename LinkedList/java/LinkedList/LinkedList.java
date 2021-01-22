@@ -17,8 +17,13 @@ public class LinkedList {
                 current = current.getNext(); // iterate over next node. 
             }
             current.setNext(new_node); // add node in List. 
-            
         }
     }
 
+    public void printList() {
+        
+    }
 }
+
+
+

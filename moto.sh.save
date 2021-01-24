@@ -1,0 +1,4 @@
+#!/bin/bash 
+
+echo "Coding Interview practice" 
+sleep 2 

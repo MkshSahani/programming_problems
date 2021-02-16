@@ -1,17 +1,11 @@
 #include <iostream> 
 #include <cstdlib> 
 #include <ctime> 
+#include "util.h"
 
 using namespace std; 
 
 
-int isSorted(int *arr, int length) {
-    if(length == 1) {
-        return 1; 
-    }  else {
-        return *(arr + length - 1) >= *(arr + length - 2) ? isSorted(arr, length -  1) : 0; 
-    }
-}
 
 
 void insertionSort(int *arr, int length)
@@ -30,13 +24,6 @@ void insertionSort(int *arr, int length)
     return; 
 }
 
-void printArr(int *arr, int length) {
-    printf("\n"); 
-    for(int i = 0; i < length; i++) {
-        cout << *(arr + i) << ", "; 
-    }
-    printf("\n"); 
-}
 
 int main(int argc, char* argv[]) {
 

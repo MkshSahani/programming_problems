@@ -7,7 +7,6 @@ class MinHeap {
         MinHeap(); // default constructor. 
         MinHeap(int length); // constructor with length parameter. 
         void insert(T element); // expecting an integer value in argument. 
-        void insert(T element, int key) // key value will work as the priority for implemnting priorityQueue from minheap. 
         T deleteMin(); 
         int count() const; // return number of element in heap. 
 
@@ -60,6 +59,31 @@ int MinHeap<T>::rightChild(int parentIndex) const {
 
 
 template <typename T> 
+int MinHeap<T>::parent(int childIndex) const {
+    if(childIndex <= 0 || childIndex >= this->count) {
+        return -1; 
+    } 
+    else {
+        return (childIndex - 1) / 2; 
+    }
+}
+
+template <typename T> 
+void MinHeap<T>::insert(T element) {
+    int temp_index = this->count; 
+    this->heap_array[temp_index] = element; 
+    this->count++;  
+    while(temp_index > 0 && this->heap_array[(temp_index - 1) / 2] > element) {
+        T temp_element = this->heap_array[(temp_index - 1) / 2]; 
+        this->heap_array[(temp_index - 1) / 2] = this->heap_array[temp_index]; 
+        this->heap_array[temp_index] = temp_element; 
+        temp_index = (temp_index - 1) / 2; 
+    }
+
+    this->count += 1; 
+}
+
+
 
 
 

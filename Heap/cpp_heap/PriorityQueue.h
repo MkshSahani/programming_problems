@@ -8,9 +8,9 @@ class PriorityQueue {
         PriorityQueue(); // default constructor. 
         PriorityQueue(int length); // getive length of priority queue .
         ~PriorityQueue(); //desctructor. 
-        void enQueue(T key, U value); 
-        void deleteMin(); 
-        void length() const; 
+        void enQueue(T key, U value);  // enQueue based on value parameter. 
+        T deleteMin(); // return them key not value  
+        int length() const; 
         void print() const; 
 
 
@@ -77,7 +77,29 @@ int PriorityQueue<T,U>::parent(int childIndex) const {
 }
 
 
+template <typename T, typename U> 
+int PriorityQueue<T,U>::length() const {
+    return this->count; 
+}
 
+template <typename T, typename U> 
+void PriorityQueue<T,U>::print() const {
+    cout << endl; 
+    cout << "==============================================" << endl; 
+    for(int i = 0; i < this->count; i++) {
+        cout << this->priority_queue_heap_array[i]  << ", "; 
+    }
+    cout << "==============================================" << endl;
+    cout << endl; 
+}
+
+template <typename T, typename U> 
+void PriorityQueue<T,U>::enQueue(T key, U value) {
+    int current_index = this->count; 
+    
+    
+
+}
 
 template <typename T, typename U> 
 PriorityQueue<T,U>::~PriorityQueue() {
